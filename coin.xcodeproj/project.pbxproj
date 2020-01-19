@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B24FC17CC0D99C7BBE95CA2 /* Pods_coin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CBD947D64231C85822A743C /* Pods_coin.framework */; };
+		DE21197E23D12687009EE911 /* IntExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21197D23D12687009EE911 /* IntExtension.swift */; };
+		DE21198223D21EDD009EE911 /* mainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE21198123D21EDD009EE911 /* mainTabBarViewController.swift */; };
+		DE2C2F9E23CB7AD600E65530 /* UITabBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2F9823CB7AD600E65530 /* UITabBarExtension.swift */; };
+		DE2C2F9F23CB7AD600E65530 /* StringExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2F9923CB7AD600E65530 /* StringExtenstion.swift */; };
+		DE2C2FA023CB7AD600E65530 /* UIViewControllerExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2F9A23CB7AD600E65530 /* UIViewControllerExtenstion.swift */; };
+		DE2C2FA123CB7AD600E65530 /* UIViewExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2F9B23CB7AD600E65530 /* UIViewExtention.swift */; };
+		DE2C2FA223CB7AD600E65530 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2F9C23CB7AD600E65530 /* DateExtension.swift */; };
+		DE2C2FA323CB7AD600E65530 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2F9D23CB7AD600E65530 /* UIColorExtension.swift */; };
+		DE2C2FAA23CB7FA300E65530 /* GeneralTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FA723CB7FA300E65530 /* GeneralTableViewCell.swift */; };
+		DE2C2FAB23CB7FA300E65530 /* GeneralTableViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FA823CB7FA300E65530 /* GeneralTableViewData.swift */; };
+		DE2C2FAC23CB7FA300E65530 /* GeneralTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FA923CB7FA300E65530 /* GeneralTableView.swift */; };
+		DE2C2FB023CB7FB800E65530 /* GeneralCollectionViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FAD23CB7FB800E65530 /* GeneralCollectionViewData.swift */; };
+		DE2C2FB123CB7FB800E65530 /* GeneralCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FAE23CB7FB800E65530 /* GeneralCollectionViewCell.swift */; };
+		DE2C2FB223CB7FB800E65530 /* GeneralCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FAF23CB7FB800E65530 /* GeneralCollectionView.swift */; };
+		DE2C2FB823CB80DA00E65530 /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FB323CB80DA00E65530 /* ResponseHandler.swift */; };
+		DE2C2FB923CB80DA00E65530 /* GlobalConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FB423CB80DA00E65530 /* GlobalConstant.swift */; };
+		DE2C2FBA23CB80DA00E65530 /* BaseFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FB523CB80DA00E65530 /* BaseFile.swift */; };
+		DE2C2FBB23CB80DA00E65530 /* BaseRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FB623CB80DA00E65530 /* BaseRequest.swift */; };
+		DE2C2FBC23CB80DA00E65530 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FB723CB80DA00E65530 /* RequestBuilder.swift */; };
+		DE2C2FBF23CB80FD00E65530 /* Favourite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FBE23CB80FD00E65530 /* Favourite.swift */; };
+		DE2C2FC523CB819600E65530 /* FavouriteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FC323CB819600E65530 /* FavouriteCollectionViewCell.swift */; };
+		DE2C2FC623CB819600E65530 /* FavouriteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2C2FC423CB819600E65530 /* FavouriteCollectionViewCell.xib */; };
+		DE2C2FC923CBBAEF00E65530 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FC823CBBAEF00E65530 /* Currency.swift */; };
+		DE2C2FCE23CBBC4800E65530 /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FCC23CBBC4800E65530 /* CurrencyTableViewCell.swift */; };
+		DE2C2FCF23CBBC4800E65530 /* CurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2C2FCD23CBBC4800E65530 /* CurrencyTableViewCell.xib */; };
+		DE2C2FD223CC485700E65530 /* currencyNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FD123CC485700E65530 /* currencyNotificationViewController.swift */; };
+		DE2C2FD523CC4C0000E65530 /* CurrencyPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FD423CC4C0000E65530 /* CurrencyPickerViewController.swift */; };
+		DE2C2FD923CC4C4A00E65530 /* CurrencyPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE2C2FD723CC4C4A00E65530 /* CurrencyPickerTableViewCell.swift */; };
+		DE2C2FDA23CC4C4A00E65530 /* CurrencyPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE2C2FD823CC4C4A00E65530 /* CurrencyPickerTableViewCell.xib */; };
+		DE58146723D0E9020035662E /* SF-Pro-Text-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE58146623D0E9020035662E /* SF-Pro-Text-Semibold.otf */; };
+		DE5FCC9D23CC882100A7F8DF /* NewsByIdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FCC9C23CC882100A7F8DF /* NewsByIdViewController.swift */; };
+		DE5FCCA123CCECF400A7F8DF /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FCCA023CCECF400A7F8DF /* UIButtonExtension.swift */; };
+		DE68BDB823CDBA78000547F1 /* EmptyCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68BDB623CDBA78000547F1 /* EmptyCellCollectionViewCell.swift */; };
+		DE68BDB923CDBA78000547F1 /* EmptyCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE68BDB723CDBA78000547F1 /* EmptyCellCollectionViewCell.xib */; };
+		DE68BDBB23CDD049000547F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE68BDBA23CDD049000547F1 /* Constants.swift */; };
+		DE6F45A323CC735900D5202F /* mainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6F45A223CC735900D5202F /* mainNavigationViewController.swift */; };
+		DE798A7923CC5B7A009DAAE6 /* NotificationCurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798A7723CC5B7A009DAAE6 /* NotificationCurrencyTableViewCell.swift */; };
+		DE798A7A23CC5B7A009DAAE6 /* NotificationCurrencyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE798A7823CC5B7A009DAAE6 /* NotificationCurrencyTableViewCell.xib */; };
+		DE798A7D23CC5C58009DAAE6 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798A7C23CC5C58009DAAE6 /* Notification.swift */; };
+		DE798A8523CC6904009DAAE6 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798A8323CC6904009DAAE6 /* NewsTableViewCell.swift */; };
+		DE798A8623CC6904009DAAE6 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE798A8423CC6904009DAAE6 /* NewsTableViewCell.xib */; };
+		DE798A8A23CC6B69009DAAE6 /* NewsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798A8923CC6B69009DAAE6 /* NewsListViewController.swift */; };
+		DE798A8D23CC6C31009DAAE6 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE798A8C23CC6C31009DAAE6 /* New.swift */; };
+		DE83011123D0443A00C38978 /* DataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE83011023D0443A00C38978 /* DataExtension.swift */; };
+		DE83012A23D059AD00C38978 /* Swissra_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE83012223D059AD00C38978 /* Swissra_Bold.otf */; };
+		DE83012B23D059AD00C38978 /* Swissra_Ultra_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE83012323D059AD00C38978 /* Swissra_Ultra_Light.otf */; };
+		DE83012C23D059AD00C38978 /* Swissra_Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE83012423D059AD00C38978 /* Swissra_Black.otf */; };
+		DE83012D23D059AD00C38978 /* Swissra_Normal.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE83012523D059AD00C38978 /* Swissra_Normal.otf */; };
+		DE83012E23D059AD00C38978 /* Swissra_Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE83012623D059AD00C38978 /* Swissra_Thin.otf */; };
+		DE83012F23D059AD00C38978 /* Swissra_Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE83012723D059AD00C38978 /* Swissra_Heavy.otf */; };
+		DE83013023D059AD00C38978 /* Swissra_Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE83012823D059AD00C38978 /* Swissra_Light.otf */; };
+		DE83013123D059AD00C38978 /* Swissra_Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE83012923D059AD00C38978 /* Swissra_Medium.otf */; };
+		DE8569C523D0E5D60041DD8E /* SF-Pro-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = DE8569C423D0E5D60041DD8E /* SF-Pro-Text-Regular.otf */; };
+		DEB35B5123CB743C0060EE78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB35B5023CB743C0060EE78 /* AppDelegate.swift */; };
+		DEB35B5323CB743C0060EE78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB35B5223CB743C0060EE78 /* SceneDelegate.swift */; };
+		DEB35B5523CB743C0060EE78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB35B5423CB743C0060EE78 /* ViewController.swift */; };
+		DEB35B5823CB743C0060EE78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB35B5623CB743C0060EE78 /* Main.storyboard */; };
+		DEB35B5B23CB743C0060EE78 /* coin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DEB35B5923CB743C0060EE78 /* coin.xcdatamodeld */; };
+		DEB35B5D23CB743E0060EE78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEB35B5C23CB743E0060EE78 /* Assets.xcassets */; };
+		DEB35B6023CB743E0060EE78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEB35B5E23CB743E0060EE78 /* LaunchScreen.storyboard */; };
+		DED3891523CF435B00B6B5FE /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED3891423CF435B00B6B5FE /* UITableViewExtension.swift */; };
+		DED3891723CF4E4E00B6B5FE /* UILableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED3891623CF4E4E00B6B5FE /* UILableExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		401B12F8248200A9A5E2A740 /* Pods-coin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coin.release.xcconfig"; path = "Target Support Files/Pods-coin/Pods-coin.release.xcconfig"; sourceTree = "<group>"; };
+		5CEF107B8A244341BCD77041 /* Pods-coin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-coin.debug.xcconfig"; path = "Target Support Files/Pods-coin/Pods-coin.debug.xcconfig"; sourceTree = "<group>"; };
+		9CBD947D64231C85822A743C /* Pods_coin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_coin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE21197D23D12687009EE911 /* IntExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtension.swift; sourceTree = "<group>"; };
+		DE21198123D21EDD009EE911 /* mainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainTabBarViewController.swift; sourceTree = "<group>"; };
+		DE2C2F9823CB7AD600E65530 /* UITabBarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITabBarExtension.swift; sourceTree = "<group>"; };
+		DE2C2F9923CB7AD600E65530 /* StringExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtenstion.swift; sourceTree = "<group>"; };
+		DE2C2F9A23CB7AD600E65530 /* UIViewControllerExtenstion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtenstion.swift; sourceTree = "<group>"; };
+		DE2C2F9B23CB7AD600E65530 /* UIViewExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtention.swift; sourceTree = "<group>"; };
+		DE2C2F9C23CB7AD600E65530 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		DE2C2F9D23CB7AD600E65530 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		DE2C2FA723CB7FA300E65530 /* GeneralTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTableViewCell.swift; sourceTree = "<group>"; };
+		DE2C2FA823CB7FA300E65530 /* GeneralTableViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTableViewData.swift; sourceTree = "<group>"; };
+		DE2C2FA923CB7FA300E65530 /* GeneralTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralTableView.swift; sourceTree = "<group>"; };
+		DE2C2FAD23CB7FB800E65530 /* GeneralCollectionViewData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralCollectionViewData.swift; sourceTree = "<group>"; };
+		DE2C2FAE23CB7FB800E65530 /* GeneralCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE2C2FAF23CB7FB800E65530 /* GeneralCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralCollectionView.swift; sourceTree = "<group>"; };
+		DE2C2FB323CB80DA00E65530 /* ResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		DE2C2FB423CB80DA00E65530 /* GlobalConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalConstant.swift; sourceTree = "<group>"; };
+		DE2C2FB523CB80DA00E65530 /* BaseFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseFile.swift; sourceTree = "<group>"; };
+		DE2C2FB623CB80DA00E65530 /* BaseRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseRequest.swift; sourceTree = "<group>"; };
+		DE2C2FB723CB80DA00E65530 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		DE2C2FBE23CB80FD00E65530 /* Favourite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourite.swift; sourceTree = "<group>"; };
+		DE2C2FC323CB819600E65530 /* FavouriteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE2C2FC423CB819600E65530 /* FavouriteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE2C2FC823CBBAEF00E65530 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		DE2C2FCC23CBBC4800E65530 /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		DE2C2FCD23CBBC4800E65530 /* CurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		DE2C2FD123CC485700E65530 /* currencyNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currencyNotificationViewController.swift; sourceTree = "<group>"; };
+		DE2C2FD423CC4C0000E65530 /* CurrencyPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPickerViewController.swift; sourceTree = "<group>"; };
+		DE2C2FD723CC4C4A00E65530 /* CurrencyPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyPickerTableViewCell.swift; sourceTree = "<group>"; };
+		DE2C2FD823CC4C4A00E65530 /* CurrencyPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyPickerTableViewCell.xib; sourceTree = "<group>"; };
+		DE58146623D0E9020035662E /* SF-Pro-Text-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Semibold.otf"; sourceTree = "<group>"; };
+		DE5FCC9C23CC882100A7F8DF /* NewsByIdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsByIdViewController.swift; sourceTree = "<group>"; };
+		DE5FCCA023CCECF400A7F8DF /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		DE68BDB623CDBA78000547F1 /* EmptyCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		DE68BDB723CDBA78000547F1 /* EmptyCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyCellCollectionViewCell.xib; sourceTree = "<group>"; };
+		DE68BDBA23CDD049000547F1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DE6F45A223CC735900D5202F /* mainNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainNavigationViewController.swift; sourceTree = "<group>"; };
+		DE798A7723CC5B7A009DAAE6 /* NotificationCurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCurrencyTableViewCell.swift; sourceTree = "<group>"; };
+		DE798A7823CC5B7A009DAAE6 /* NotificationCurrencyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCurrencyTableViewCell.xib; sourceTree = "<group>"; };
+		DE798A7C23CC5C58009DAAE6 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		DE798A8323CC6904009DAAE6 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		DE798A8423CC6904009DAAE6 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		DE798A8923CC6B69009DAAE6 /* NewsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListViewController.swift; sourceTree = "<group>"; };
+		DE798A8C23CC6C31009DAAE6 /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
+		DE83011023D0443A00C38978 /* DataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataExtension.swift; sourceTree = "<group>"; };
+		DE83012223D059AD00C38978 /* Swissra_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Swissra_Bold.otf; sourceTree = "<group>"; };
+		DE83012323D059AD00C38978 /* Swissra_Ultra_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Swissra_Ultra_Light.otf; sourceTree = "<group>"; };
+		DE83012423D059AD00C38978 /* Swissra_Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Swissra_Black.otf; sourceTree = "<group>"; };
+		DE83012523D059AD00C38978 /* Swissra_Normal.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Swissra_Normal.otf; sourceTree = "<group>"; };
+		DE83012623D059AD00C38978 /* Swissra_Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Swissra_Thin.otf; sourceTree = "<group>"; };
+		DE83012723D059AD00C38978 /* Swissra_Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Swissra_Heavy.otf; sourceTree = "<group>"; };
+		DE83012823D059AD00C38978 /* Swissra_Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Swissra_Light.otf; sourceTree = "<group>"; };
+		DE83012923D059AD00C38978 /* Swissra_Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Swissra_Medium.otf; sourceTree = "<group>"; };
+		DE8569C423D0E5D60041DD8E /* SF-Pro-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Text-Regular.otf"; sourceTree = "<group>"; };
+		DEB35B4D23CB743C0060EE78 /* coin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = coin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEB35B5023CB743C0060EE78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DEB35B5223CB743C0060EE78 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DEB35B5423CB743C0060EE78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DEB35B5723CB743C0060EE78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DEB35B5A23CB743C0060EE78 /* coin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coin.xcdatamodel; sourceTree = "<group>"; };
+		DEB35B5C23CB743E0060EE78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEB35B5F23CB743E0060EE78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEB35B6123CB743E0060EE78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED3891423CF435B00B6B5FE /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		DED3891623CF4E4E00B6B5FE /* UILableExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILableExtension.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DEB35B4A23CB743C0060EE78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B24FC17CC0D99C7BBE95CA2 /* Pods_coin.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		113E7AD9EEDEDE90E37E8411 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5CEF107B8A244341BCD77041 /* Pods-coin.debug.xcconfig */,
+				401B12F8248200A9A5E2A740 /* Pods-coin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE2C2F9623CB7A8800E65530 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2F9723CB7A8E00E65530 /* Extension */,
+				DE68BDBA23CDD049000547F1 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		DE2C2F9723CB7A8E00E65530 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2F9C23CB7AD600E65530 /* DateExtension.swift */,
+				DE2C2F9923CB7AD600E65530 /* StringExtenstion.swift */,
+				DE2C2F9D23CB7AD600E65530 /* UIColorExtension.swift */,
+				DE2C2F9823CB7AD600E65530 /* UITabBarExtension.swift */,
+				DE2C2F9A23CB7AD600E65530 /* UIViewControllerExtenstion.swift */,
+				DE2C2F9B23CB7AD600E65530 /* UIViewExtention.swift */,
+				DE5FCCA023CCECF400A7F8DF /* UIButtonExtension.swift */,
+				DED3891423CF435B00B6B5FE /* UITableViewExtension.swift */,
+				DED3891623CF4E4E00B6B5FE /* UILableExtension.swift */,
+				DE83011023D0443A00C38978 /* DataExtension.swift */,
+				DE21197D23D12687009EE911 /* IntExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DE2C2FA423CB7F5700E65530 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FA623CB7F6D00E65530 /* TableView */,
+				DE2C2FA523CB7F6200E65530 /* CollectionView */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		DE2C2FA523CB7F6200E65530 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FAF23CB7FB800E65530 /* GeneralCollectionView.swift */,
+				DE2C2FAE23CB7FB800E65530 /* GeneralCollectionViewCell.swift */,
+				DE2C2FAD23CB7FB800E65530 /* GeneralCollectionViewData.swift */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DE2C2FA623CB7F6D00E65530 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FA923CB7FA300E65530 /* GeneralTableView.swift */,
+				DE2C2FA723CB7FA300E65530 /* GeneralTableViewCell.swift */,
+				DE2C2FA823CB7FA300E65530 /* GeneralTableViewData.swift */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE2C2FBD23CB80F500E65530 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FBE23CB80FD00E65530 /* Favourite.swift */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		DE2C2FC023CB814C00E65530 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FCA23CBBC1A00E65530 /* TableView */,
+				DE2C2FC123CB815100E65530 /* CollectionView */,
+			);
+			path = XIB;
+			sourceTree = "<group>";
+		};
+		DE2C2FC123CB815100E65530 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				DE68BDB123CDBA1B000547F1 /* Empty Cell */,
+				DE2C2FC223CB815900E65530 /* Favourite */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		DE2C2FC223CB815900E65530 /* Favourite */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FC323CB819600E65530 /* FavouriteCollectionViewCell.swift */,
+				DE2C2FC423CB819600E65530 /* FavouriteCollectionViewCell.xib */,
+			);
+			path = Favourite;
+			sourceTree = "<group>";
+		};
+		DE2C2FC723CBBADF00E65530 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FC823CBBAEF00E65530 /* Currency.swift */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		DE2C2FCA23CBBC1A00E65530 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				DE798A8223CC68EA009DAAE6 /* News */,
+				DE798A7623CC5B4E009DAAE6 /* Notification Currency */,
+				DE2C2FD623CC4C2A00E65530 /* Currency Picker */,
+				DE2C2FCB23CBBC2600E65530 /* Currency */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		DE2C2FCB23CBBC2600E65530 /* Currency */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FCC23CBBC4800E65530 /* CurrencyTableViewCell.swift */,
+				DE2C2FCD23CBBC4800E65530 /* CurrencyTableViewCell.xib */,
+			);
+			path = Currency;
+			sourceTree = "<group>";
+		};
+		DE2C2FD023CC482E00E65530 /* Currency Notification */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FD123CC485700E65530 /* currencyNotificationViewController.swift */,
+			);
+			path = "Currency Notification";
+			sourceTree = "<group>";
+		};
+		DE2C2FD323CC4BC900E65530 /* Currency Picker */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FD423CC4C0000E65530 /* CurrencyPickerViewController.swift */,
+			);
+			path = "Currency Picker";
+			sourceTree = "<group>";
+		};
+		DE2C2FD623CC4C2A00E65530 /* Currency Picker */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FD723CC4C4A00E65530 /* CurrencyPickerTableViewCell.swift */,
+				DE2C2FD823CC4C4A00E65530 /* CurrencyPickerTableViewCell.xib */,
+			);
+			path = "Currency Picker";
+			sourceTree = "<group>";
+		};
+		DE5FCC9B23CC87F900A7F8DF /* News By Id */ = {
+			isa = PBXGroup;
+			children = (
+				DE5FCC9C23CC882100A7F8DF /* NewsByIdViewController.swift */,
+			);
+			path = "News By Id";
+			sourceTree = "<group>";
+		};
+		DE68BDB123CDBA1B000547F1 /* Empty Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DE68BDB623CDBA78000547F1 /* EmptyCellCollectionViewCell.swift */,
+				DE68BDB723CDBA78000547F1 /* EmptyCellCollectionViewCell.xib */,
+			);
+			path = "Empty Cell";
+			sourceTree = "<group>";
+		};
+		DE798A7623CC5B4E009DAAE6 /* Notification Currency */ = {
+			isa = PBXGroup;
+			children = (
+				DE798A7723CC5B7A009DAAE6 /* NotificationCurrencyTableViewCell.swift */,
+				DE798A7823CC5B7A009DAAE6 /* NotificationCurrencyTableViewCell.xib */,
+			);
+			path = "Notification Currency";
+			sourceTree = "<group>";
+		};
+		DE798A7B23CC5C45009DAAE6 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				DE798A7C23CC5C58009DAAE6 /* Notification.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		DE798A7E23CC6632009DAAE6 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE798A7F23CC6644009DAAE6 /* Fonts */,
+				DEB35B5C23CB743E0060EE78 /* Assets.xcassets */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		DE798A7F23CC6644009DAAE6 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DE58146623D0E9020035662E /* SF-Pro-Text-Semibold.otf */,
+				DE8569C423D0E5D60041DD8E /* SF-Pro-Text-Regular.otf */,
+				DE83012423D059AD00C38978 /* Swissra_Black.otf */,
+				DE83012223D059AD00C38978 /* Swissra_Bold.otf */,
+				DE83012723D059AD00C38978 /* Swissra_Heavy.otf */,
+				DE83012823D059AD00C38978 /* Swissra_Light.otf */,
+				DE83012923D059AD00C38978 /* Swissra_Medium.otf */,
+				DE83012523D059AD00C38978 /* Swissra_Normal.otf */,
+				DE83012623D059AD00C38978 /* Swissra_Thin.otf */,
+				DE83012323D059AD00C38978 /* Swissra_Ultra_Light.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		DE798A8223CC68EA009DAAE6 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				DE798A8323CC6904009DAAE6 /* NewsTableViewCell.swift */,
+				DE798A8423CC6904009DAAE6 /* NewsTableViewCell.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		DE798A8723CC6B41009DAAE6 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				DE5FCC9B23CC87F900A7F8DF /* News By Id */,
+				DE798A8823CC6B47009DAAE6 /* List */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		DE798A8823CC6B47009DAAE6 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				DE798A8923CC6B69009DAAE6 /* NewsListViewController.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		DE798A8B23CC6C08009DAAE6 /* New */ = {
+			isa = PBXGroup;
+			children = (
+				DE798A8C23CC6C31009DAAE6 /* New.swift */,
+			);
+			path = New;
+			sourceTree = "<group>";
+		};
+		DEB35B4423CB743C0060EE78 = {
+			isa = PBXGroup;
+			children = (
+				DEB35B4F23CB743C0060EE78 /* coin */,
+				DEB35B4E23CB743C0060EE78 /* Products */,
+				113E7AD9EEDEDE90E37E8411 /* Pods */,
+				E602088C6E762622BC1C664F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DEB35B4E23CB743C0060EE78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEB35B4D23CB743C0060EE78 /* coin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DEB35B4F23CB743C0060EE78 /* coin */ = {
+			isa = PBXGroup;
+			children = (
+				DEB35B6A23CB74600060EE78 /* View Controller */,
+				DEB35B6923CB74580060EE78 /* Stroyboard */,
+				DEB35B6823CB74530060EE78 /* Model */,
+				DE2C2F9623CB7A8800E65530 /* Utils */,
+				DEB35B6723CB74470060EE78 /* WebService */,
+				DE798A7E23CC6632009DAAE6 /* Support Files */,
+				DEB35B5023CB743C0060EE78 /* AppDelegate.swift */,
+				DEB35B5223CB743C0060EE78 /* SceneDelegate.swift */,
+				DEB35B6123CB743E0060EE78 /* Info.plist */,
+				DEB35B5923CB743C0060EE78 /* coin.xcdatamodeld */,
+			);
+			path = coin;
+			sourceTree = "<group>";
+		};
+		DEB35B6723CB74470060EE78 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FB523CB80DA00E65530 /* BaseFile.swift */,
+				DE2C2FB623CB80DA00E65530 /* BaseRequest.swift */,
+				DE2C2FB423CB80DA00E65530 /* GlobalConstant.swift */,
+				DE2C2FB723CB80DA00E65530 /* RequestBuilder.swift */,
+				DE2C2FB323CB80DA00E65530 /* ResponseHandler.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		DEB35B6823CB74530060EE78 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE798A8B23CC6C08009DAAE6 /* New */,
+				DE798A7B23CC5C45009DAAE6 /* Notification */,
+				DE2C2FC723CBBADF00E65530 /* Currency */,
+				DE2C2FBD23CB80F500E65530 /* Favourite */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DEB35B6923CB74580060EE78 /* Stroyboard */ = {
+			isa = PBXGroup;
+			children = (
+				DEB35B5623CB743C0060EE78 /* Main.storyboard */,
+				DEB35B5E23CB743E0060EE78 /* LaunchScreen.storyboard */,
+			);
+			path = Stroyboard;
+			sourceTree = "<group>";
+		};
+		DEB35B6A23CB74600060EE78 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE2C2FA423CB7F5700E65530 /* Common */,
+				DE2C2FC023CB814C00E65530 /* XIB */,
+				DE798A8723CC6B41009DAAE6 /* News */,
+				DE2C2FD323CC4BC900E65530 /* Currency Picker */,
+				DE2C2FD023CC482E00E65530 /* Currency Notification */,
+				DEB35B5423CB743C0060EE78 /* ViewController.swift */,
+				DE6F45A223CC735900D5202F /* mainNavigationViewController.swift */,
+				DE21198123D21EDD009EE911 /* mainTabBarViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		E602088C6E762622BC1C664F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CBD947D64231C85822A743C /* Pods_coin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DEB35B4C23CB743C0060EE78 /* coin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB35B6423CB743E0060EE78 /* Build configuration list for PBXNativeTarget "coin" */;
+			buildPhases = (
+				DEF7A820CE42420B1A651738 /* [CP] Check Pods Manifest.lock */,
+				DEB35B4923CB743C0060EE78 /* Sources */,
+				DEB35B4A23CB743C0060EE78 /* Frameworks */,
+				DEB35B4B23CB743C0060EE78 /* Resources */,
+				7A4B821765974D8CFB9975D5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = coin;
+			productName = coin;
+			productReference = DEB35B4D23CB743C0060EE78 /* coin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DEB35B4523CB743C0060EE78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Waleed Afifi";
+				TargetAttributes = {
+					DEB35B4C23CB743C0060EE78 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = DEB35B4823CB743C0060EE78 /* Build configuration list for PBXProject "coin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DEB35B4423CB743C0060EE78;
+			productRefGroup = DEB35B4E23CB743C0060EE78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DEB35B4C23CB743C0060EE78 /* coin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DEB35B4B23CB743C0060EE78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2C2FC623CB819600E65530 /* FavouriteCollectionViewCell.xib in Resources */,
+				DE58146723D0E9020035662E /* SF-Pro-Text-Semibold.otf in Resources */,
+				DE798A7A23CC5B7A009DAAE6 /* NotificationCurrencyTableViewCell.xib in Resources */,
+				DE2C2FCF23CBBC4800E65530 /* CurrencyTableViewCell.xib in Resources */,
+				DE68BDB923CDBA78000547F1 /* EmptyCellCollectionViewCell.xib in Resources */,
+				DE83012B23D059AD00C38978 /* Swissra_Ultra_Light.otf in Resources */,
+				DE83012F23D059AD00C38978 /* Swissra_Heavy.otf in Resources */,
+				DE8569C523D0E5D60041DD8E /* SF-Pro-Text-Regular.otf in Resources */,
+				DE798A8623CC6904009DAAE6 /* NewsTableViewCell.xib in Resources */,
+				DE83012D23D059AD00C38978 /* Swissra_Normal.otf in Resources */,
+				DE2C2FDA23CC4C4A00E65530 /* CurrencyPickerTableViewCell.xib in Resources */,
+				DEB35B6023CB743E0060EE78 /* LaunchScreen.storyboard in Resources */,
+				DE83012C23D059AD00C38978 /* Swissra_Black.otf in Resources */,
+				DE83013023D059AD00C38978 /* Swissra_Light.otf in Resources */,
+				DE83013123D059AD00C38978 /* Swissra_Medium.otf in Resources */,
+				DE83012A23D059AD00C38978 /* Swissra_Bold.otf in Resources */,
+				DE83012E23D059AD00C38978 /* Swissra_Thin.otf in Resources */,
+				DEB35B5D23CB743E0060EE78 /* Assets.xcassets in Resources */,
+				DEB35B5823CB743C0060EE78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A4B821765974D8CFB9975D5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coin/Pods-coin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-coin/Pods-coin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-coin/Pods-coin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEF7A820CE42420B1A651738 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-coin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DEB35B4923CB743C0060EE78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE2C2FBC23CB80DA00E65530 /* RequestBuilder.swift in Sources */,
+				DE68BDBB23CDD049000547F1 /* Constants.swift in Sources */,
+				DE2C2FBB23CB80DA00E65530 /* BaseRequest.swift in Sources */,
+				DE2C2FB923CB80DA00E65530 /* GlobalConstant.swift in Sources */,
+				DEB35B5523CB743C0060EE78 /* ViewController.swift in Sources */,
+				DE798A8523CC6904009DAAE6 /* NewsTableViewCell.swift in Sources */,
+				DED3891523CF435B00B6B5FE /* UITableViewExtension.swift in Sources */,
+				DE68BDB823CDBA78000547F1 /* EmptyCellCollectionViewCell.swift in Sources */,
+				DE5FCCA123CCECF400A7F8DF /* UIButtonExtension.swift in Sources */,
+				DE21198223D21EDD009EE911 /* mainTabBarViewController.swift in Sources */,
+				DE2C2FD923CC4C4A00E65530 /* CurrencyPickerTableViewCell.swift in Sources */,
+				DE2C2FB023CB7FB800E65530 /* GeneralCollectionViewData.swift in Sources */,
+				DE2C2F9F23CB7AD600E65530 /* StringExtenstion.swift in Sources */,
+				DE798A7923CC5B7A009DAAE6 /* NotificationCurrencyTableViewCell.swift in Sources */,
+				DEB35B5123CB743C0060EE78 /* AppDelegate.swift in Sources */,
+				DE2C2FAA23CB7FA300E65530 /* GeneralTableViewCell.swift in Sources */,
+				DE2C2FD223CC485700E65530 /* currencyNotificationViewController.swift in Sources */,
+				DE2C2FCE23CBBC4800E65530 /* CurrencyTableViewCell.swift in Sources */,
+				DE2C2FBA23CB80DA00E65530 /* BaseFile.swift in Sources */,
+				DE2C2FAB23CB7FA300E65530 /* GeneralTableViewData.swift in Sources */,
+				DE798A8A23CC6B69009DAAE6 /* NewsListViewController.swift in Sources */,
+				DE798A8D23CC6C31009DAAE6 /* New.swift in Sources */,
+				DE2C2F9E23CB7AD600E65530 /* UITabBarExtension.swift in Sources */,
+				DE2C2FA223CB7AD600E65530 /* DateExtension.swift in Sources */,
+				DE21197E23D12687009EE911 /* IntExtension.swift in Sources */,
+				DE2C2FD523CC4C0000E65530 /* CurrencyPickerViewController.swift in Sources */,
+				DE2C2FC923CBBAEF00E65530 /* Currency.swift in Sources */,
+				DE2C2FC523CB819600E65530 /* FavouriteCollectionViewCell.swift in Sources */,
+				DE2C2FB823CB80DA00E65530 /* ResponseHandler.swift in Sources */,
+				DE2C2FA023CB7AD600E65530 /* UIViewControllerExtenstion.swift in Sources */,
+				DE83011123D0443A00C38978 /* DataExtension.swift in Sources */,
+				DED3891723CF4E4E00B6B5FE /* UILableExtension.swift in Sources */,
+				DEB35B5B23CB743C0060EE78 /* coin.xcdatamodeld in Sources */,
+				DE6F45A323CC735900D5202F /* mainNavigationViewController.swift in Sources */,
+				DE2C2FA323CB7AD600E65530 /* UIColorExtension.swift in Sources */,
+				DE2C2FB223CB7FB800E65530 /* GeneralCollectionView.swift in Sources */,
+				DE2C2FBF23CB80FD00E65530 /* Favourite.swift in Sources */,
+				DEB35B5323CB743C0060EE78 /* SceneDelegate.swift in Sources */,
+				DE798A7D23CC5C58009DAAE6 /* Notification.swift in Sources */,
+				DE2C2FA123CB7AD600E65530 /* UIViewExtention.swift in Sources */,
+				DE5FCC9D23CC882100A7F8DF /* NewsByIdViewController.swift in Sources */,
+				DE2C2FB123CB7FB800E65530 /* GeneralCollectionViewCell.swift in Sources */,
+				DE2C2FAC23CB7FA300E65530 /* GeneralTableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DEB35B5623CB743C0060EE78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEB35B5723CB743C0060EE78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DEB35B5E23CB743E0060EE78 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEB35B5F23CB743E0060EE78 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DEB35B6223CB743E0060EE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DEB35B6323CB743E0060EE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DEB35B6523CB743E0060EE78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CEF107B8A244341BCD77041 /* Pods-coin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9445UT3G2U;
+				INFOPLIST_FILE = coin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.afifitech.coin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DEB35B6623CB743E0060EE78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 401B12F8248200A9A5E2A740 /* Pods-coin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9445UT3G2U;
+				INFOPLIST_FILE = coin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.afifitech.coin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DEB35B4823CB743C0060EE78 /* Build configuration list for PBXProject "coin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB35B6223CB743E0060EE78 /* Debug */,
+				DEB35B6323CB743E0060EE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEB35B6423CB743E0060EE78 /* Build configuration list for PBXNativeTarget "coin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEB35B6523CB743E0060EE78 /* Debug */,
+				DEB35B6623CB743E0060EE78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DEB35B5923CB743C0060EE78 /* coin.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DEB35B5A23CB743C0060EE78 /* coin.xcdatamodel */,
+			);
+			currentVersion = DEB35B5A23CB743C0060EE78 /* coin.xcdatamodel */;
+			path = coin.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DEB35B4523CB743C0060EE78 /* Project object */;
+}

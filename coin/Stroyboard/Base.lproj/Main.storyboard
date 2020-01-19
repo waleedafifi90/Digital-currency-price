@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YhU-Uj-26Y">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Text-Regular.otf">
+            <string>SFProText-Regular</string>
+        </array>
+        <array key="Swissra_Bold.otf">
+            <string>Swissra-Bold</string>
+        </array>
+        <array key="Swissra_Normal.otf">
+            <string>Swissra-Normal</string>
+        </array>
+        <array key="Swissra_Thin.otf">
+            <string>Swissra-Thin</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--منبه العملات-->
+        <scene sceneID="kP6-ro-gcz">
+            <objects>
+                <viewController storyboardIdentifier="currencyNotificationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rD7-Cq-mxn" customClass="currencyNotificationViewController" customModule="coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mgn-a2-gwI">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12.5" translatesAutoresizingMaskIntoConstraints="NO" id="nOQ-Z8-zCX">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="31.5" translatesAutoresizingMaskIntoConstraints="NO" id="rgO-ap-70v">
+                                        <rect key="frame" x="0.0" y="40" width="414" height="312.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="zwH-6D-P8G">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="LMz-qd-aue">
+                                                        <rect key="frame" x="26" y="0.0" width="362" height="109"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="منبه العملات" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ovA-aW-u51">
+                                                                <rect key="frame" x="0.0" y="0.0" width="362" height="20"/>
+                                                                <fontDescription key="fontDescription" name="Swissra-Bold" family="Swissra-Bold" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يرجى اختيـار نوع العملة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fJ-cg-oSz">
+                                                                <rect key="frame" x="0.0" y="32" width="362" height="9"/>
+                                                                <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="9"/>
+                                                                <color key="textColor" name="95989C"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5TM-vc-ycg">
+                                                                <rect key="frame" x="0.0" y="53" width="362" height="56"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="zXz-0E-lQY">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="362" height="56"/>
+                                                                        <subviews>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-collapse_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="mt2-dX-6NZ">
+                                                                                <rect key="frame" x="17" y="24" width="8" height="8"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="8" id="GWO-lg-n6m"/>
+                                                                                    <constraint firstAttribute="width" secondItem="mt2-dX-6NZ" secondAttribute="height" multiplier="1:1" id="JGm-6B-rHQ"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHf-B8-XWx">
+                                                                                <rect key="frame" x="34" y="0.0" width="279" height="56"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="56" id="hE9-sC-E46"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" name="Swissra-Bold" family="Swissra-Bold" pointSize="11"/>
+                                                                                <state key="normal" title="اختر عملة">
+                                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                </state>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <action selector="chooseCurrencyPressed:" destination="rD7-Cq-mxn" eventType="touchUpInside" id="CZG-ET-C0b"/>
+                                                                                    <segue destination="tv5-QP-wFE" kind="show" id="WjD-a7-PNY"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default image" translatesAutoresizingMaskIntoConstraints="NO" id="YBC-UC-qO8">
+                                                                                <rect key="frame" x="322" y="16.5" width="23" height="23"/>
+                                                                                <color key="backgroundColor" name="F8F9FB"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" secondItem="YBC-UC-qO8" secondAttribute="height" id="8jX-ui-AEt"/>
+                                                                                    <constraint firstAttribute="height" constant="23" id="tWZ-Cq-Asz"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="17" bottom="0.0" trailing="17"/>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="zXz-0E-lQY" secondAttribute="trailing" id="Aif-m2-wBk"/>
+                                                                    <constraint firstAttribute="height" constant="56" id="Fjg-TE-shs"/>
+                                                                    <constraint firstItem="zXz-0E-lQY" firstAttribute="leading" secondItem="5TM-vc-ycg" secondAttribute="leading" id="Pg0-p7-FcM"/>
+                                                                    <constraint firstItem="zXz-0E-lQY" firstAttribute="top" secondItem="5TM-vc-ycg" secondAttribute="top" id="UMP-Kd-UNu"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="zXz-0E-lQY" secondAttribute="bottom" id="gcB-SB-4E1"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="8"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                        <real key="value" value="2"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                        <color key="value" name="F4F4F4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="B91-Fp-Q0Z">
+                                                        <rect key="frame" x="26" y="127" width="362" height="153"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="يرجى تحديد قيمة المنبه" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1W-Ic-Z72">
+                                                                <rect key="frame" x="0.0" y="0.0" width="362" height="9"/>
+                                                                <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="9"/>
+                                                                <color key="textColor" name="95989C"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="WX0-AJ-JBW">
+                                                                <rect key="frame" x="0.0" y="21" width="362" height="132"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ra-0Z-jSd">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="362" height="56"/>
+                                                                        <subviews>
+                                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nld-4C-HCe">
+                                                                                <rect key="frame" x="180.5" y="0.0" width="1" height="56"/>
+                                                                                <color key="backgroundColor" name="F7F7F7"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" constant="1" id="Itb-ja-oNA"/>
+                                                                                </constraints>
+                                                                            </view>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="R1a-L3-61p">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="362" height="56"/>
+                                                                                <subviews>
+                                                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ادخل قيمة" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SFV-a7-UV5">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="181" height="56"/>
+                                                                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="18"/>
+                                                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                                                    </textField>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jiM-by-nnG">
+                                                                                        <rect key="frame" x="181" y="0.0" width="181" height="56"/>
+                                                                                        <subviews>
+                                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-collapse_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="tr7-yR-ruo">
+                                                                                                <rect key="frame" x="17" y="0.0" width="8" height="56"/>
+                                                                                                <constraints>
+                                                                                                    <constraint firstAttribute="width" constant="8" id="5AG-YK-tVe"/>
+                                                                                                </constraints>
+                                                                                            </imageView>
+                                                                                            <pickerView contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJO-n5-dYk">
+                                                                                                <rect key="frame" x="25" y="0.0" width="148" height="56"/>
+                                                                                                <userDefinedRuntimeAttributes>
+                                                                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                                    </userDefinedRuntimeAttribute>
+                                                                                                </userDefinedRuntimeAttributes>
+                                                                                                <connections>
+                                                                                                    <outlet property="dataSource" destination="rD7-Cq-mxn" id="Lli-jf-Cb6"/>
+                                                                                                    <outlet property="delegate" destination="rD7-Cq-mxn" id="ioo-yA-zRk"/>
+                                                                                                </connections>
+                                                                                            </pickerView>
+                                                                                        </subviews>
+                                                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="17" bottom="0.0" trailing="8"/>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="trailing" secondItem="R1a-L3-61p" secondAttribute="trailing" id="AdH-Eq-8Rw"/>
+                                                                            <constraint firstItem="Nld-4C-HCe" firstAttribute="bottom" secondItem="R1a-L3-61p" secondAttribute="bottom" id="An4-yz-M24"/>
+                                                                            <constraint firstAttribute="height" constant="56" id="IGV-1s-1Db"/>
+                                                                            <constraint firstItem="R1a-L3-61p" firstAttribute="leading" secondItem="6Ra-0Z-jSd" secondAttribute="leading" id="UOC-ky-eoI"/>
+                                                                            <constraint firstItem="Nld-4C-HCe" firstAttribute="centerX" secondItem="6Ra-0Z-jSd" secondAttribute="centerX" id="acE-wq-vg3"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="R1a-L3-61p" secondAttribute="bottom" id="dCf-YB-ATa"/>
+                                                                            <constraint firstItem="R1a-L3-61p" firstAttribute="top" secondItem="6Ra-0Z-jSd" secondAttribute="top" id="oPC-9I-YzR"/>
+                                                                            <constraint firstItem="Nld-4C-HCe" firstAttribute="top" secondItem="R1a-L3-61p" secondAttribute="top" id="yd3-UY-8e6"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="8"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="2"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" name="F4F4F4"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IZi-FD-3Hg">
+                                                                        <rect key="frame" x="0.0" y="77" width="362" height="55"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="55" id="fZo-jD-vzX"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="Swissra-Bold" family="Swissra-Bold" pointSize="13"/>
+                                                                        <inset key="contentEdgeInsets" minX="0.0" minY="6" maxX="0.0" maxY="0.0"/>
+                                                                        <state key="normal" title="اضافة تنبيه" backgroundImage="btn">
+                                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <connections>
+                                                                            <action selector="addNotificationPressed:" destination="rD7-Cq-mxn" eventType="touchUpInside" id="pMt-yQ-Y4X"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="26" bottom="0.0" trailing="26"/>
+                                            </stackView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YIV-aN-fkp">
+                                                <rect key="frame" x="0.0" y="311.5" width="414" height="1"/>
+                                                <color key="backgroundColor" name="F8F9FB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="YM0-ar-bGT"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N1z-v4-iUJ" customClass="GeneralTableView" customModule="coin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="365" width="414" height="352"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="40" leading="0.0" bottom="8" trailing="0.0"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hGG-p5-tqE" firstAttribute="bottom" secondItem="nOQ-Z8-zCX" secondAttribute="bottom" id="CuM-zo-hqR"/>
+                            <constraint firstItem="hGG-p5-tqE" firstAttribute="trailing" secondItem="nOQ-Z8-zCX" secondAttribute="trailing" id="nfM-xr-ssI"/>
+                            <constraint firstItem="nOQ-Z8-zCX" firstAttribute="leading" secondItem="hGG-p5-tqE" secondAttribute="leading" id="sgH-uz-pRV"/>
+                            <constraint firstItem="nOQ-Z8-zCX" firstAttribute="top" secondItem="hGG-p5-tqE" secondAttribute="top" id="tfj-Mk-dVa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hGG-p5-tqE"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="منبه العملات" image="Bell" id="O7g-3e-4br"/>
+                    <navigationItem key="navigationItem" id="Wsn-rA-VJK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="conditionPickerView" destination="uJO-n5-dYk" id="W4O-Ob-4d6"/>
+                        <outlet property="currencyButton" destination="qHf-B8-XWx" id="B9C-7Q-ph1"/>
+                        <outlet property="currencyImage" destination="YBC-UC-qO8" id="SNU-fk-Oex"/>
+                        <outlet property="notificationValueTextField" destination="SFV-a7-UV5" id="PL5-LY-OrA"/>
+                        <outlet property="tableView" destination="N1z-v4-iUJ" id="YH9-oa-JK4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ExB-2c-cgZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2848" y="-525"/>
+        </scene>
+        <!--Currency Picker View Controller-->
+        <scene sceneID="OGC-c9-3kA">
+            <objects>
+                <viewController storyboardIdentifier="CurrencyPickerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tv5-QP-wFE" customClass="CurrencyPickerViewController" customModule="coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mPm-kH-Ifb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I8d-VN-caP">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اختر عملة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYK-Ih-iba">
+                                        <rect key="frame" x="8" y="8" width="398" height="20"/>
+                                        <fontDescription key="fontDescription" name="Swissra-Bold" family="Swissra-Bold" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MIq-ME-8Fg" customClass="GeneralTableView" customModule="coin" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="38" width="398" height="679"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GRV-Mn-xP4" firstAttribute="bottom" secondItem="I8d-VN-caP" secondAttribute="bottom" id="Kqd-Z0-ZF7"/>
+                            <constraint firstItem="I8d-VN-caP" firstAttribute="leading" secondItem="GRV-Mn-xP4" secondAttribute="leading" id="Qt7-Vc-e3I"/>
+                            <constraint firstItem="GRV-Mn-xP4" firstAttribute="trailing" secondItem="I8d-VN-caP" secondAttribute="trailing" id="Vkl-mg-g23"/>
+                            <constraint firstItem="I8d-VN-caP" firstAttribute="top" secondItem="GRV-Mn-xP4" secondAttribute="top" id="idW-Ud-0Da"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GRV-Mn-xP4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r3r-qM-5wC">
+                        <barButtonItem key="backBarButtonItem" title="رجوع" id="qRA-oG-GRq"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="MIq-ME-8Fg" id="4On-2W-h4M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IEQ-wE-Rp3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3654" y="-525"/>
+        </scene>
+        <!--اسعار العملات-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="k4M-vS-DCf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RbH-FL-lUK">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="391"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bQX-jo-k8V">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="391"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vMa-lS-avf">
+                                                        <rect key="frame" x="26" y="40" width="362" height="97"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اسـعار العملات الالكترونية" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79n-7C-cca">
+                                                                <rect key="frame" x="0.0" y="0.0" width="362" height="23.5"/>
+                                                                <fontDescription key="fontDescription" name="Swissra-Bold" family="Swissra-Bold" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DpT-fb-yba">
+                                                                <rect key="frame" x="0.0" y="33.5" width="362" height="63.5"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mXf-w4-Zgv">
+                                                                        <rect key="frame" x="0.0" y="6.5" width="234.5" height="50"/>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                    </view>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09-19-2018" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QfX-Yt-184">
+                                                                        <rect key="frame" x="244.5" y="25" width="57.5" height="13"/>
+                                                                        <fontDescription key="fontDescription" name="SFProText-Regular" family="SF Pro Text" pointSize="11"/>
+                                                                        <color key="textColor" name="95989C"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اخر تحديث:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfd-88-tT4">
+                                                                        <rect key="frame" x="312" y="24.5" width="50" height="14"/>
+                                                                        <fontDescription key="fontDescription" name="Swissra-Thin" family="Swissra-Thin" pointSize="12"/>
+                                                                        <color key="textColor" name="95989C"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XIT-Ee-iHm" customClass="GeneralCollectionView" customModule="coin" customModuleProvider="target">
+                                                        <rect key="frame" x="26" y="157" width="362" height="226"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="XIT-Ee-iHm" secondAttribute="height" multiplier="320:200" id="lJn-JS-tXm"/>
+                                                        </constraints>
+                                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="pNS-sZ-4T2">
+                                                            <size key="itemSize" width="50" height="50"/>
+                                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        </collectionViewFlowLayout>
+                                                        <cells/>
+                                                    </collectionView>
+                                                </subviews>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="40" leading="26" bottom="8" trailing="26"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="bQX-jo-k8V" firstAttribute="top" secondItem="RbH-FL-lUK" secondAttribute="top" id="3T6-ry-TGh"/>
+                                            <constraint firstAttribute="trailing" secondItem="bQX-jo-k8V" secondAttribute="trailing" id="Cl3-AG-2T5"/>
+                                            <constraint firstItem="bQX-jo-k8V" firstAttribute="leading" secondItem="RbH-FL-lUK" secondAttribute="leading" id="E5i-VQ-4II"/>
+                                            <constraint firstAttribute="bottom" secondItem="bQX-jo-k8V" secondAttribute="bottom" id="wVs-hR-KxZ"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jPf-SJ-0Jl">
+                                        <rect key="frame" x="0.0" y="391" width="414" height="417"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtJ-I4-pr7">
+                                                <rect key="frame" x="0.0" y="10" width="414" height="41"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="I5m-4L-7Pm">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="41"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="التداول" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Kj-Jt-vq5">
+                                                                <rect key="frame" x="8" y="0.0" width="90" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="90" id="Pzz-gA-tpB"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="9"/>
+                                                                <color key="textColor" name="95989C"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="السعر" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOf-5i-crA">
+                                                                <rect key="frame" x="108" y="0.0" width="80" height="41"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="80" id="I9V-RE-4Ph"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="9"/>
+                                                                <color key="textColor" name="95989C"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="العملة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFt-lC-duF">
+                                                                <rect key="frame" x="198" y="0.0" width="166" height="41"/>
+                                                                <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="9"/>
+                                                                <color key="textColor" name="95989C"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="8" bottom="0.0" trailing="50"/>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" name="F8F9FB"/>
+                                                <constraints>
+                                                    <constraint firstItem="I5m-4L-7Pm" firstAttribute="top" secondItem="EtJ-I4-pr7" secondAttribute="top" id="9bV-4w-ucN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="I5m-4L-7Pm" secondAttribute="bottom" id="bci-dS-uTn"/>
+                                                    <constraint firstItem="I5m-4L-7Pm" firstAttribute="leading" secondItem="EtJ-I4-pr7" secondAttribute="leading" id="eoi-wv-v2f"/>
+                                                    <constraint firstAttribute="trailing" secondItem="I5m-4L-7Pm" secondAttribute="trailing" id="jzC-XG-knW"/>
+                                                    <constraint firstAttribute="height" constant="41" id="sdZ-Le-c7L"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="95989C"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Bs9-VG-pZn" customClass="GeneralTableView" customModule="coin" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="51" width="414" height="283"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            </tableView>
+                                        </subviews>
+                                        <directionalEdgeInsets key="directionalLayoutMargins" top="10" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="k4M-vS-DCf" secondAttribute="bottom" id="Nob-W0-4Mf"/>
+                            <constraint firstItem="k4M-vS-DCf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="RPt-TW-13S"/>
+                            <constraint firstItem="k4M-vS-DCf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eIW-AG-TBo"/>
+                            <constraint firstItem="k4M-vS-DCf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u9T-eS-eO9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="اسعار العملات" image="icPrice" id="WFx-lM-QAM">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="iQ6-0k-dlt"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="XIT-Ee-iHm" id="gas-Ge-8YT"/>
+                        <outlet property="tableView" destination="Bs9-VG-pZn" id="wh4-ej-6XV"/>
+                        <outlet property="todayDateLabel" destination="QfX-Yt-184" id="hdd-ci-Ua0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2848" y="117"/>
+        </scene>
+        <!--اخبار وتقارير-->
+        <scene sceneID="dVa-Fi-QNK">
+            <objects>
+                <viewController storyboardIdentifier="NewsListViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pvn-9q-UPN" customClass="NewsListViewController" customModule="coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HET-dM-VRO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="qTg-EH-oKt">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اخبار وتقارير" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ng-DT-l0g">
+                                        <rect key="frame" x="16" y="40" width="382" height="20"/>
+                                        <fontDescription key="fontDescription" name="Swissra-Bold" family="Swissra-Bold" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" contentViewInsetsToSafeArea="NO" id="axO-cd-tzi" customClass="GeneralTableView" customModule="coin" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="64" width="382" height="653"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </tableView>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="40" leading="16" bottom="8" trailing="16"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dID-cy-QPF" firstAttribute="trailing" secondItem="qTg-EH-oKt" secondAttribute="trailing" id="6T4-Hr-enU"/>
+                            <constraint firstItem="qTg-EH-oKt" firstAttribute="top" secondItem="dID-cy-QPF" secondAttribute="top" id="WQF-Fo-rdh"/>
+                            <constraint firstItem="qTg-EH-oKt" firstAttribute="leading" secondItem="dID-cy-QPF" secondAttribute="leading" id="hCx-zL-uzN"/>
+                            <constraint firstItem="dID-cy-QPF" firstAttribute="bottom" secondItem="qTg-EH-oKt" secondAttribute="bottom" id="mXr-pW-SVM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dID-cy-QPF"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="اخبار وتقارير" image="Menu" id="geU-jg-qg4">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="tableView" destination="axO-cd-tzi" id="tiZ-ER-Ry0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6nx-lG-6Yi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2087" y="808"/>
+        </scene>
+        <!--News By Id View Controller-->
+        <scene sceneID="oR0-pF-gk5">
+            <objects>
+                <viewController storyboardIdentifier="NewsByIdViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aNf-h1-t1J" customClass="NewsByIdViewController" customModule="coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VyF-zP-bQq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qRx-al-KMW">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRF-yS-whH">
+                                        <rect key="frame" x="0.0" y="49" width="414" height="40"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="luT-dr-51t">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gjx-vH-bVc">
+                                                        <rect key="frame" x="26" y="8" width="42" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Swissra-Bold" family="Swissra-Bold" pointSize="12"/>
+                                                        <state key="normal" title="مشاركة">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="shareButtonPressed:" destination="aNf-h1-t1J" eventType="touchUpInside" id="Le7-Cq-VnG"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AXh-4u-b7m">
+                                                        <rect key="frame" x="358" y="8" width="30" height="24"/>
+                                                        <fontDescription key="fontDescription" name="Swissra-Bold" family="Swissra-Bold" pointSize="12"/>
+                                                        <state key="normal" title="عودة">
+                                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="backButtonPressed:" destination="aNf-h1-t1J" eventType="touchUpInside" id="ilD-rt-I87"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="26" bottom="0.0" trailing="26"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="luT-dr-51t" firstAttribute="top" secondItem="hRF-yS-whH" secondAttribute="top" id="4EP-Tt-xs0"/>
+                                            <constraint firstAttribute="bottom" secondItem="luT-dr-51t" secondAttribute="bottom" id="e2A-K5-lHc"/>
+                                            <constraint firstAttribute="trailing" secondItem="luT-dr-51t" secondAttribute="trailing" id="edv-sI-B9j"/>
+                                            <constraint firstItem="luT-dr-51t" firstAttribute="leading" secondItem="hRF-yS-whH" secondAttribute="leading" id="qm1-Ji-man"/>
+                                            <constraint firstAttribute="height" constant="40" id="xXQ-4y-tLO"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="DqX-Ck-Jdj">
+                                        <rect key="frame" x="0.0" y="89" width="414" height="773"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="EaF-x5-0aM">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="281.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Uns-dD-490">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="59"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hE5-Mx-e8N">
+                                                                <rect key="frame" x="26" y="0.0" width="362" height="0.0"/>
+                                                                <fontDescription key="fontDescription" name="Swissra-Bold" family="Swissra-Bold" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zPD-WL-omk">
+                                                                <rect key="frame" x="26" y="9" width="362" height="50"/>
+                                                                <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="10"/>
+                                                                <color key="textColor" name="95989C"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="26" bottom="0.0" trailing="26"/>
+                                                    </stackView>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sU8-u9-OxM">
+                                                        <rect key="frame" x="0.0" y="65" width="414" height="216.5"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="sU8-u9-OxM" secondAttribute="height" multiplier="377:197" id="ag7-xF-kSO"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="pZh-dl-HgU">
+                                                <rect key="frame" x="0.0" y="295.5" width="414" height="477.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="ldi-eA-spX">
+                                                        <rect key="frame" x="26" y="0.0" width="362" height="28"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SO8-tg-LhI">
+                                                                <rect key="frame" x="0.0" y="0.0" width="116" height="28"/>
+                                                                <subviews>
+                                                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bSD-FR-caQ">
+                                                                        <rect key="frame" x="88" y="0.0" width="28" height="28"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FXd-Jp-8gV">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                                                                                <subviews>
+                                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="pG0-E1-fWR">
+                                                                                        <rect key="frame" x="8" y="8" width="12" height="12"/>
+                                                                                    </imageView>
+                                                                                </subviews>
+                                                                                <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
+                                                                            </stackView>
+                                                                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gA-Sr-B7i">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="28" height="28"/>
+                                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                        <real key="value" value="4"/>
+                                                                                    </userDefinedRuntimeAttribute>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                                <connections>
+                                                                                    <action selector="shareButtonPressed:" destination="aNf-h1-t1J" eventType="touchUpInside" id="gDl-Zr-FVl"/>
+                                                                                </connections>
+                                                                            </button>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" name="D8D8D8"/>
+                                                                        <constraints>
+                                                                            <constraint firstItem="FXd-Jp-8gV" firstAttribute="top" secondItem="bSD-FR-caQ" secondAttribute="top" id="Czw-DI-OXr"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="FXd-Jp-8gV" secondAttribute="trailing" id="Mum-7g-UP9"/>
+                                                                            <constraint firstAttribute="width" secondItem="bSD-FR-caQ" secondAttribute="height" multiplier="1:1" id="UOK-AG-DfP"/>
+                                                                            <constraint firstItem="5gA-Sr-B7i" firstAttribute="leading" secondItem="bSD-FR-caQ" secondAttribute="leading" id="WEL-pu-qVL"/>
+                                                                            <constraint firstItem="FXd-Jp-8gV" firstAttribute="leading" secondItem="bSD-FR-caQ" secondAttribute="leading" id="amp-1v-wty"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="5gA-Sr-B7i" secondAttribute="trailing" id="f50-D9-KUe"/>
+                                                                            <constraint firstItem="5gA-Sr-B7i" firstAttribute="top" secondItem="bSD-FR-caQ" secondAttribute="top" id="g3h-cy-Ase"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="FXd-Jp-8gV" secondAttribute="bottom" id="kpu-rH-nmJ"/>
+                                                                            <constraint firstAttribute="height" constant="28" id="nX6-CD-wkg"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="5gA-Sr-B7i" secondAttribute="bottom" id="six-mF-hqD"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="4"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="bSD-FR-caQ" firstAttribute="top" secondItem="SO8-tg-LhI" secondAttribute="top" id="F3I-bm-WID"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="bSD-FR-caQ" secondAttribute="trailing" id="T70-vj-r89"/>
+                                                                    <constraint firstAttribute="height" constant="28" id="fRk-le-JoO"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVe-Ep-Imf">
+                                                                <rect key="frame" x="123" y="0.0" width="104" height="28"/>
+                                                                <color key="backgroundColor" name="00C3F3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="104" id="XJ9-2Z-Ntj"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="10"/>
+                                                                <state key="normal" title="مشاركة عبر تويتر">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="twitterButtonPressed:" destination="aNf-h1-t1J" eventType="touchUpInside" id="aqH-5V-uXy"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpH-oV-PX6">
+                                                                <rect key="frame" x="234" y="0.0" width="128" height="28"/>
+                                                                <color key="backgroundColor" name="2D609B"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="128" id="bB5-Ov-Ae7"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="Swissra-Normal" family="Swissra-Normal" pointSize="10"/>
+                                                                <state key="normal" title="مشاركة عبر الفيسبوك">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="4"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                                <connections>
+                                                                    <action selector="fbButtonPressed:" destination="aNf-h1-t1J" eventType="touchUpInside" id="Qpk-HW-HSA"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p7m-bd-kg5">
+                                                        <rect key="frame" x="26" y="42" width="362" height="435.5"/>
+                                                        <subviews>
+                                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QHx-pJ-twv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="362" height="435.5"/>
+                                                                <wkWebViewConfiguration key="configuration">
+                                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                                    <wkPreferences key="preferences"/>
+                                                                </wkWebViewConfiguration>
+                                                            </wkWebView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="QHx-pJ-twv" firstAttribute="leading" secondItem="p7m-bd-kg5" secondAttribute="leading" id="ZAX-F3-WlQ"/>
+                                                            <constraint firstAttribute="bottom" secondItem="QHx-pJ-twv" secondAttribute="bottom" id="bSC-aS-vBa"/>
+                                                            <constraint firstItem="QHx-pJ-twv" firstAttribute="top" secondItem="p7m-bd-kg5" secondAttribute="top" id="bbZ-fu-nXN"/>
+                                                            <constraint firstAttribute="trailing" secondItem="QHx-pJ-twv" secondAttribute="trailing" id="vnU-yI-M6W"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="26" bottom="0.0" trailing="26"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="5" leading="0.0" bottom="0.0" trailing="0.0"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xmV-S6-N3B" firstAttribute="bottom" secondItem="qRx-al-KMW" secondAttribute="bottom" id="MrV-Xu-37U"/>
+                            <constraint firstItem="xmV-S6-N3B" firstAttribute="trailing" secondItem="qRx-al-KMW" secondAttribute="trailing" id="Uoo-yq-331"/>
+                            <constraint firstItem="qRx-al-KMW" firstAttribute="top" secondItem="VyF-zP-bQq" secondAttribute="top" id="aAa-NQ-j9k"/>
+                            <constraint firstItem="qRx-al-KMW" firstAttribute="leading" secondItem="xmV-S6-N3B" secondAttribute="leading" id="gRj-g4-UxY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xmV-S6-N3B"/>
+                    </view>
+                    <connections>
+                        <outlet property="newDate" destination="zPD-WL-omk" id="AW0-Pa-B9R"/>
+                        <outlet property="newImage" destination="sU8-u9-OxM" id="yxo-EM-KnA"/>
+                        <outlet property="newsDescription" destination="QHx-pJ-twv" id="6b6-Cg-5SU"/>
+                        <outlet property="newsTitle" destination="hE5-Mx-e8N" id="74h-bj-jz9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sef-oj-KW5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2847.826086956522" y="807.58928571428567"/>
+        </scene>
+        <!--Main Tab Bar View Controller-->
+        <scene sceneID="nhU-pc-wGr">
+            <objects>
+                <tabBarController storyboardIdentifier="mainTabBarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p6o-1v-iwo" customClass="mainTabBarViewController" customModule="coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="0bR-Tm-EWS"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lPg-YZ-7uz">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="noneSelectedImage">
+                                <color key="value" name="95989C"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="isShowOriginalImage" value="YES"/>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="pvn-9q-UPN" kind="relationship" relationship="viewControllers" id="f1a-Sl-Cp4"/>
+                        <segue destination="rD7-Cq-mxn" kind="relationship" relationship="viewControllers" id="LOQ-6I-kLh"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="9AX-Bj-OZz"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFp-Fz-QW0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2088" y="117"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="D25-8o-OMM">
+            <objects>
+                <navigationController storyboardIdentifier="mainNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YhU-Uj-26Y" customClass="mainNavigationViewController" customModule="coin" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="icPrice" id="9za-Rr-FoQ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Ih5-9z-fKm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="p6o-1v-iwo" kind="relationship" relationship="rootViewController" id="23f-qO-NwM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q7O-2I-VcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1336" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Bell" width="21" height="24"/>
+        <image name="Menu" width="23" height="23"/>
+        <image name="btn" width="323" height="55"/>
+        <image name="default image" width="268" height="201"/>
+        <image name="icPrice" width="26" height="23"/>
+        <image name="icons8-collapse_arrow" width="8" height="5"/>
+        <image name="share" width="22" height="24"/>
+        <namedColor name="00C3F3">
+            <color red="0.0" green="0.76470588235294112" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="2D609B">
+            <color red="0.17647058823529413" green="0.37647058823529411" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="95989C">
+            <color red="0.58431372549019611" green="0.59607843137254901" blue="0.61176470588235299" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="D8D8D8">
+            <color red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="F4F4F4">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.95686274509803926" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="F7F7F7">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="F8F9FB">
+            <color red="0.97254901960784312" green="0.97647058823529409" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

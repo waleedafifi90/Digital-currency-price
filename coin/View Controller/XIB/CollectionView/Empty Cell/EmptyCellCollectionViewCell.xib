@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EmptyCellCollectionViewCell" customModule="coin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="175" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="175" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D5L-pm-tBB">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="96"/>
+                        <color key="backgroundColor" name="F9F9FA"/>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-plus" translatesAutoresizingMaskIntoConstraints="NO" id="SE7-SY-dHV">
+                        <rect key="frame" x="72.5" y="33" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="SE7-SY-dHV" secondAttribute="height" multiplier="1:1" id="Spg-Hr-FcI"/>
+                            <constraint firstAttribute="height" constant="30" id="jlP-70-xOX"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pln-XR-MdG">
+                        <rect key="frame" x="0.0" y="0.0" width="175" height="96"/>
+                        <connections>
+                            <action selector="addFavPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="VMQ-k4-KY8"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="pln-XR-MdG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8bE-xr-5NU"/>
+                <constraint firstItem="SE7-SY-dHV" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="Abj-ds-19L"/>
+                <constraint firstAttribute="bottom" secondItem="pln-XR-MdG" secondAttribute="bottom" id="UhB-cJ-SSQ"/>
+                <constraint firstItem="SE7-SY-dHV" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ZkI-yG-Ddv"/>
+                <constraint firstItem="D5L-pm-tBB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fqt-qc-IDc"/>
+                <constraint firstItem="pln-XR-MdG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hma-ZZ-ltZ"/>
+                <constraint firstAttribute="trailing" secondItem="pln-XR-MdG" secondAttribute="trailing" id="pWn-a6-MRe"/>
+                <constraint firstAttribute="bottom" secondItem="D5L-pm-tBB" secondAttribute="bottom" id="plc-QA-KTg"/>
+                <constraint firstItem="D5L-pm-tBB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ysC-o7-WHJ"/>
+                <constraint firstAttribute="trailing" secondItem="D5L-pm-tBB" secondAttribute="trailing" id="z7V-mx-gDR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <point key="canvasLocation" x="137.68115942028987" y="87.723214285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icons8-plus" width="26" height="26"/>
+        <namedColor name="F9F9FA">
+            <color red="0.97647058823529409" green="0.97647058823529409" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
